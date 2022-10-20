@@ -6,7 +6,7 @@ import pathlib
 
 # get the geojsons
 geojson_dir = "data/"
-path2geojsons = geojson_dir + "*.geojson"
+path2geojsons = os.path.join(geojson_dir, "*.geojson")
 to_map = glob.glob(path2geojsons)
 print(f"We are going to map {len(to_map)} geojsons. They are:")
 for geojson in to_map:
